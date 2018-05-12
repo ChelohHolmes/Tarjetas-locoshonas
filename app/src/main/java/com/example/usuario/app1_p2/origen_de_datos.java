@@ -3,78 +3,94 @@ package com.example.usuario.app1_p2;
 import java.util.ArrayList;
 
 public class origen_de_datos {
+    public origen_de_datos() {
+    }
+
     public ArrayList<tarjeta> showAll()
     {
         ArrayList<tarjeta> resultado = new ArrayList<tarjeta>();
 
         tarjeta uno = new tarjeta();
-        uno.Nombre.setText("Buenas");
-        uno.Edad.setText("Noshes");
-        uno.Descripcion.setText("jeje");
-        uno.ID=0;
-        resultado.add(uno);
-
         tarjeta dos = new tarjeta();
-        dos.Nombre.setText("Buenas");
-        dos.Edad.setText("Noshes");
-        dos.Descripcion.setText("jeje");
-        dos.ID=1;
-        resultado.add(dos);
-
         tarjeta tres = new tarjeta();
-        tres.Nombre.setText("Buenas");
-        tres.Edad.setText("Noshes");
-        tres.Descripcion.setText("jeje");
-        tres.ID=2;
-        resultado.add(tres);
-
         tarjeta cuatro = new tarjeta();
-        cuatro.Nombre.setText("Buenas");
-        cuatro.Edad.setText("Noshes");
-        cuatro.Descripcion.setText("jeje");
-        cuatro.ID=3;
-        resultado.add(cuatro);
-
         tarjeta cinco = new tarjeta();
-        cinco.Nombre.setText("Buenas");
-        cinco.Edad.setText("Noshes");
-        cinco.Descripcion.setText("jeje");
-        cinco.ID=4;
-        resultado.add(cinco);
-
         tarjeta seis = new tarjeta();
-        seis.Nombre.setText("Buenas");
-        seis.Edad.setText("Noshes");
-        seis.Descripcion.setText("jeje");
-        seis.ID=5;
-        resultado.add(seis);
-
         tarjeta siete = new tarjeta();
-        siete.Nombre.setText("Buenas");
-        siete.Edad.setText("Noshes");
-        siete.Descripcion.setText("jeje");
-        siete.ID=6;
-        resultado.add(siete);
-
         tarjeta ocho = new tarjeta();
-        ocho.Nombre.setText("Buenas");
-        ocho.Edad.setText("Noshes");
-        ocho.Descripcion.setText("jeje");
-        ocho.ID=7;
-        resultado.add(ocho);
-
-        tarjeta nueve= new tarjeta();
-        nueve.Nombre.setText("Buenas");
-        nueve.Edad.setText("Noshes");
-        nueve.Descripcion.setText("jeje");
-        nueve.ID=8;
-        resultado.add(nueve);
-
+        tarjeta nueve = new tarjeta();
         tarjeta diez = new tarjeta();
-        diez.Nombre.setText("Buenas");
-        diez.Edad.setText("Noshes");
-        diez.Descripcion.setText("jeje");
+
+
+        uno.Nombre = "Puffle";
+        uno.Edad = "Azul";
+        uno.Descripcion = "Es normal.";
+        uno.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/0/00/Tipoisso.png/revision/latest/scale-to-width-down/285");
+        uno.ID=0;
+
+        dos.Nombre = "Puffle";
+        dos.Edad = "Rojo";
+        dos.Descripcion = "Era salvaje.";
+        dos.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/e/e2/Red_Puffle_Old_Look.png/revision/latest/scale-to-width-down/282");
+        dos.ID=1;
+
+        tres.Nombre = "Puffle";
+        tres.Edad = "Verde";
+        tres.Descripcion = "Es loco y vuela con su gorrito.";
+        tres.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/8/83/IMG_0880.PNG/revision/latest/scale-to-width-down/283");
+        tres.ID=2;
+
+        cuatro.Nombre = "Puffle";
+        cuatro.Edad = "Rosa";
+        cuatro.Descripcion = "Le gustan las burbujas.";
+        cuatro.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/d/d5/Old_Pink_Puffle_old_look.png/revision/latest/scale-to-width-down/285");
+        cuatro.ID=3;
+
+        cinco.Nombre = "Puffle";
+        cinco.Edad = "Morado";
+        cinco.Descripcion = "Es muy cool y le gusta bailar.";
+        cinco.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/b/b8/Lolz_icon.png/revision/latest/scale-to-width-down/283");
+        cinco.ID=4;
+
+        seis.Nombre = "Puffle";
+        seis.Edad = "Negro";
+        seis.Descripcion = "Está enojadito.";
+        seis.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/3/3d/Puffle_negro_fdp.png/revision/latest/scale-to-width-down/280");
+        seis.ID=5;
+
+        siete.Nombre = "Puffle";
+        siete.Edad = "Amarillo";
+        siete.Descripcion = "Es artístico.";
+        siete.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/f/f3/Yellowpuffleold.png/revision/latest/scale-to-width-down/284");
+        siete.ID=6;
+
+        ocho.Nombre = "Puffle";
+        ocho.Edad = "Blanco";
+        ocho.Descripcion = "Es frío.";
+        ocho.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/3/3d/White_Puffle.png/revision/latest/scale-to-width-down/283");
+        ocho.ID=7;
+
+        nueve.Nombre = "Puffle";
+        nueve.Edad = "Naranja";
+        nueve.Descripcion = "Tiene la lengua morada jeje.";
+        nueve.Imagen =("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/d/d2/Orangepuffleold.png/revision/latest/scale-to-width-down/270");
+        nueve.ID=8;
+
+        diez.Nombre = "Puffle";
+        diez.Edad = "Café";
+        diez.Descripcion = "Le gustan los carritos, y tiene unos lentes padres :D";
+        diez.Imagen = ("https://vignette.wikia.nocookie.net/club-penguin-rewritten/images/9/9e/Brown_Puffle_Old_Look.png/revision/latest/scale-to-width-down/282");
         diez.ID=9;
+
+        resultado.add(uno);
+        resultado.add(dos);
+        resultado.add(tres);
+        resultado.add(cuatro);
+        resultado.add(cinco);
+        resultado.add(seis);
+        resultado.add(siete);
+        resultado.add(ocho);
+        resultado.add(nueve);
         resultado.add(diez);
 
         return resultado;

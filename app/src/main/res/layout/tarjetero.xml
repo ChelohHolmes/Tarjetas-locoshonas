@@ -22,6 +22,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/Imagens"
+                    android:contentDescription="Imagen de la tarjeta."
                     android:background="@mipmap/ic_launcher" />
             </LinearLayout>
             <LinearLayout
@@ -33,11 +35,13 @@
                     android:layout_height="wrap_content"
                     android:height="55dp"
                     android:text="Nombre"
+                    android:textSize="26sp"
                     android:id="@+id/Nombre"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:height="55dp"
+                    android:textSize="26sp"
                     android:text="Edad"
                     android:id="@+id/Edad"/>
             </LinearLayout>
@@ -49,7 +53,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:height="55dp"
+                android:height="65dp"
+                android:textSize="26sp"
                 android:text="Descripción"
                 android:id="@+id/Descripcion"/>
         </LinearLayout>

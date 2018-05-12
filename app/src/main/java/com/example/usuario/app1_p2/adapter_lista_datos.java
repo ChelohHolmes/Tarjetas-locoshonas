@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -34,7 +37,13 @@ public class adapter_lista_datos  extends BaseAdapter{
         inflate = LayoutInflater.from(context);
         View v = inflate.inflate(R.layout.tarjetero, null);
         TextView nombre = (TextView) v.findViewById(R.id.Nombre);
-        nombre.setText(ListaArreglo.get(i).Nombre.getText());
+        TextView edad = (TextView) v.findViewById(R.id.Edad);
+        TextView descripion = (TextView) v.findViewById(R.id.Descripcion);
+        nombre.setText(ListaArreglo.get(i).Nombre);
+        edad.setText(ListaArreglo.get(i).Edad);
+        descripion.setText(ListaArreglo.get(i).Descripcion);
+        ImageView imagen=(ImageView)v.findViewById(R.id.Imagens);
+        Picasso.with(context).load(ListaArreglo.get(i).Imagen).into(imagen);
         return v;
     }
 }

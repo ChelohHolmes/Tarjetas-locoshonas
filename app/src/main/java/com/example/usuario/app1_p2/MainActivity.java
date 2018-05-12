@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         ListView Jorge = (ListView) findViewById(R.id.ListView);
         adapter_lista_datos buenas = new adapter_lista_datos();
         origen_de_datos noches = new origen_de_datos();
+        buenas.context=this;
+        buenas.ListaArreglo=noches.showAll();
         Jorge.setAdapter(buenas);
     }
 

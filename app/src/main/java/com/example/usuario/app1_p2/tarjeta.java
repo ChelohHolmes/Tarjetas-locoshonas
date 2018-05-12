@@ -5,9 +5,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class tarjeta {
-    public TextView Nombre;
-    public TextView Edad;
-    public TextView Descripcion;
-    public ImageView Foto;
+    public String Nombre;
+    public String Edad;
+    public String Descripcion;
+    public String Imagen;
     public int ID;
+
+
+    public tarjeta() {
+    }
+
 }
