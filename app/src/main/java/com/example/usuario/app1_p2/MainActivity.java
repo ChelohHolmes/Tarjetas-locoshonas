@@ -17,5 +17,5 @@ public class MainActivity extends AppCompatActivity {
         buenas.ListaArreglo=noches.showAll();
         Jorge.setAdapter(buenas);
     }
-
+    
 }
