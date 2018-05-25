@@ -1,7 +1,10 @@
 package com.example.usuario.app1_p2;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +19,15 @@ public class MainActivity extends AppCompatActivity {
         buenas.context=this;
         buenas.ListaArreglo=noches.showAll();
         Jorge.setAdapter(buenas);
+        Jorge.setOnItemClickListener (new AdapterView.OnItemClickListener()
+                                      {
+
+                                          @Override
+                                          public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                                              Intent ElIntent = new Intent(MainActivity.this, Main2Activity.class);
+                                          }
+                                      }
+        );
     }
     
 }
