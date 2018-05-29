@@ -20,13 +20,12 @@ public class MainActivity extends AppCompatActivity {
         buenas.ListaArreglo=noches.showAll();
         Jorge.setAdapter(buenas);
         Jorge.setOnItemClickListener (new AdapterView.OnItemClickListener()
-                                      {
-
-                                          @Override
-                                          public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                                              Intent ElIntent = new Intent(MainActivity.this, Main2Activity.class);
-                                          }
-                                      }
+              {
+                  @Override
+                  public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                      Intent ElIntent = new Intent(MainActivity.this, Main2Activity.class);
+                  }
+              }
         );
     }
     
