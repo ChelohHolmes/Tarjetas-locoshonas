@@ -19,11 +19,20 @@ public class MainActivity extends AppCompatActivity {
         buenas.context=this;
         buenas.ListaArreglo=noches.showAll();
         Jorge.setAdapter(buenas);
+
         Jorge.setOnItemClickListener (new AdapterView.OnItemClickListener()
               {
                   @Override
-                  public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                  public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                       Intent ElIntent = new Intent(MainActivity.this, Main2Activity.class);
+                      tarjeta x = (tarjeta) parent.getItemAtPosition(i);
+                      ElIntent.putExtra("Puffle", x.Nombre);
+                      ElIntent.putExtra("Color", x.Edad);
+                      ElIntent.putExtra("Descripción", x.Descripcion);
+                      ElIntent.putExtra("Imagen", x.Imagen);
+
+                      startActivity(ElIntent);
+
                   }
               }
         );
