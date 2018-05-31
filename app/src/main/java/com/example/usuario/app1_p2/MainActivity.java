@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
                   public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                       Intent ElIntent = new Intent(MainActivity.this, Main2Activity.class);
                       tarjeta x = (tarjeta) parent.getItemAtPosition(i);
-                      ElIntent.putExtra("Puffle", x.Nombre);
-                      ElIntent.putExtra("Color", x.Edad);
+                      ElIntent.putExtra("Nombre", x.Nombre);
+                      ElIntent.putExtra("Edad", x.Edad);
                       ElIntent.putExtra("Descripción", x.Descripcion);
                       ElIntent.putExtra("Imagen", x.Imagen);
 
@@ -37,5 +37,5 @@ public class MainActivity extends AppCompatActivity {
               }
         );
     }
-    
+
 }

@@ -43,7 +43,7 @@ public class adapter_lista_datos  extends BaseAdapter{
         edad.setText(ListaArreglo.get(i).Edad);
         descripion.setText(ListaArreglo.get(i).Descripcion);
         ImageView imagen=(ImageView)v.findViewById(R.id.Imagens);
-        Picasso.with(context).load(ListaArreglo.get(i).Imagen).into(imagen);
+        Picasso.get().load(ListaArreglo.get(i).Imagen).into(imagen);
         return v;
     }
 }

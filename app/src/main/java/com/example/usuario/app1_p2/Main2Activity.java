@@ -22,14 +22,15 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent recieve = getIntent();
 
-        String Noms = recieve.getStringExtra("Puffle");
-        String Eds = recieve.getStringExtra("Color");
+        String Noms = recieve.getStringExtra("Nombre");
+        String Eds = recieve.getStringExtra("Edad");
         String Descs = recieve.getStringExtra("Descripcion");
         String Ims = recieve.getStringExtra("Imagen");
 
         nombre.setText(Noms);
         edad.setText(Eds);
         descripcon.setText(Descs);
+        Picasso.get().load(Ims).into(imagen);
 
 
     }
