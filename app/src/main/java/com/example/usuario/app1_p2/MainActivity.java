@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                       tarjeta x = (tarjeta) parent.getItemAtPosition(i);
                       ElIntent.putExtra("Nombre", x.Nombre);
                       ElIntent.putExtra("Edad", x.Edad);
-                      ElIntent.putExtra("Descripción", x.Descripcion);
+                      ElIntent.putExtra("Descripcion", x.Descripcion);
                       ElIntent.putExtra("Imagen", x.Imagen);
 
                       startActivity(ElIntent);

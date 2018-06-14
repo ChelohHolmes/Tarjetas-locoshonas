@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
 
         TextView nombre = (TextView) findViewById(R.id.Nombre);
         TextView edad = (TextView) findViewById(R.id.Edad);
-        TextView descripcon = (TextView) findViewById(R.id.Descripcion);
+        TextView descripcion = (TextView) findViewById(R.id.Descripcion);
         ImageView imagen = (ImageView) findViewById(R.id.Imagens);
 
         Intent recieve = getIntent();
@@ -29,7 +29,7 @@ public class Main2Activity extends AppCompatActivity {
 
         nombre.setText(Noms);
         edad.setText(Eds);
-        descripcon.setText(Descs);
+        descripcion.setText(Descs);
         Picasso.get().load(Ims).into(imagen);
 
 
